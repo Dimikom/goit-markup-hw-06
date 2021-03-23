@@ -27,7 +27,7 @@
   --logo-font: 'Raleway', sans-serif;
   --section-inner-padding: 94px;
   --card-set-gap: 30px;
-  --accent-duration: 2050ms; /*продолжительность перехода ховера*/
+  --accent-duration: 250ms; /*продолжительность перехода ховера*/
 }
 
 /* =======COMPONENTS======== */
@@ -639,6 +639,7 @@ ol {
 .address-box {
   font-style: normal;
   margin-top: 20px;
+  padding-right: 12px;
   outline: 1px solid teal;
 }
 
@@ -654,14 +655,7 @@ ol {
   letter-spacing: 0.03em;
 }
 
-.footer-email a {
-  color: var(--footer-adr-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
+.footer-email a,
 .footer-tel a {
   color: var(--footer-adr-color);
   font-weight: 400;
@@ -718,10 +712,12 @@ ol {
   background-color: var(--accent-color);
   color: #fff;
 }
-/*--Блок подписки на новости--*/
+/* --Блок подписки на новости-- */
 .subscription {
   outline: 1px solid gold;
-  margin-left: 93px; /*====надо разобраться как прилепить подписку к правому краю контейнера - смотри тел и мыло в хедере!!!*/
+  margin-left: 93px;
+
+  /*====надо разобраться как прилепить подписку к правому краю контейнера - смотри тел и мыло в хедере!!!*/
   /* margin-top: 72px;
   margin-left: 93px; */
 }
@@ -746,16 +742,23 @@ ol {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: transparent;
+  color: var(--primary-white-color);
+}
+.subscription-email:focus {
+  outline: none;
 }
 .email-button {
   font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--primary-white-color);
   background: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   border-radius: 4px;
-  display: block;
+  /* display: block; */
   letter-spacing: 0.06em;
   min-width: 200px;
   padding: 10px 28px;
@@ -765,6 +768,9 @@ ol {
   transition-property: background-color;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.send-icon {
+  margin-left: 10px;
 }
 /*======END FOOTER=========*/
 
@@ -790,7 +796,8 @@ ol {
 }
 
 .filter-btn {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   font-family: inherit;
   background-color: var(--team-section-bground);
   font-weight: 500;

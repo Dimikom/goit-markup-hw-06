@@ -325,8 +325,9 @@
             <li class="footer-social-item">
               <a href="" class="footer-social-link link">
                 <svg class="social-link-icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#twitter"></use></svg
-              ></a>
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="footer-social-item">
               <a href="" class="footer-social-link link">
@@ -343,6 +344,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!--Блок подписки на новости в футере-->
+        <div class="subscription">
+          <p class="subscription-title">Подпишитесь на рассылку</p>
+          <form class="subscription-form">
+            <label>
+              <input
+                class="subscription-email"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                method="POST"
+              />
+            </label>
+            <button class="email-button" type="submit">
+              <p>Подписаться</p>
+              <svg class="send-icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
