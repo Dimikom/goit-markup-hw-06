@@ -345,27 +345,29 @@
             </li>
           </ul>
         </div>
+
         <!--Блок подписки на новости в футере-->
-        <div class="subscription">
+
+        <form class="subscription-form" autocomplete="off">
           <p class="subscription-title">Подпишитесь на рассылку</p>
-          <form class="subscription-form">
+          <div class="subscription-field">
             <label>
               <input
                 class="subscription-email"
                 type="email"
                 name="user-email"
                 placeholder="E-mail"
-                method="POST"
               />
             </label>
+
             <button class="email-button" type="submit">
-              <p>Подписаться</p>
+              Подписаться
               <svg class="send-icon" width="24px" height="24px">
                 <use href="./images/sprite.svg#send-icon"></use>
               </svg>
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
